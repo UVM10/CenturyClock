@@ -12,7 +12,7 @@ void MAIN_Loop();
 
 extern int g_cycle_1s_count;
 extern bool g_1s_signal;
-extern const int ***g_p_font_digit;
+extern const int *g_p_font_digit;
 extern int g_clock_second;
 extern int g_clock_minute;
 extern int g_clock_hour;
