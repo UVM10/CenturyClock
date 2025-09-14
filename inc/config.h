@@ -1,7 +1,7 @@
 #ifndef CONSTANT_H
 #define CONSTANT_H
 
-#define CYCLE_1S_WAIT 3
+#define CYCLE_1S_WAIT 1000000000
 #define DIRECTION_INCREASE true
 #define DIRECTION_DECREASE false
 #define MAX_VALUE_SECOND 59
@@ -43,14 +43,14 @@
 #define POS_YY_Y 13
 
 #define FONT_DIGIT_VALUE { \
-    {14, 17, 3, 21, 25, 17, 17, 14}, \
+    {14, 17, 19, 21, 25, 17, 17, 14}, \
     {4, 12, 20, 4, 4, 4, 4, 31}, \
     {14, 17, 1, 2, 4, 8, 16, 31}, \
     {14, 17, 1, 6, 1, 1, 17, 14}, \
     {17, 17, 17, 31, 1, 1, 1, 1}, \
     {31, 16, 16, 30, 1, 1, 1, 30}, \
     {15, 16, 16, 31, 17, 17, 17, 14}, \
-    {31, 1, 1, 2, 8, 8, 8, 8}, \
+    {31, 1, 1, 2, 4, 4, 4, 4}, \
     {14, 17, 17, 14, 17, 17, 17, 14}, \
     {14, 17, 17, 31, 1, 1, 17, 14}  \
 }

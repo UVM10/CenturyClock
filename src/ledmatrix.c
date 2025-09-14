@@ -17,9 +17,10 @@ void LEDMATRIX_DisplayDigit(int digit, uint32_t x, uint32_t y, int color)
     while(height > 0)
     {
         height--;
-        p_row += FONT_WIDTH/5;
+        p_row ++;
 
         LEDMATRIX_DisplayRow(*p_row, FONT_WIDTH, x, y, color);
+        y++;
     }
 }
 
