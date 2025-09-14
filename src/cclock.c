@@ -7,12 +7,12 @@
 
 void CCLOCK_DisplayClock()
 {
-    DISPLAY_Hour();
-    DISPLAY_Minute();
-    DISPLAY_Second();
-    DISPLAY_Day();
-    DISPLAY_Month();
-    DISPLAY_Year();
+    DISPLAY_DisplayHour();
+    DISPLAY_DisplayMinute();
+    DISPLAY_DisplaySecond();
+    DISPLAY_DisplayDay();
+    DISPLAY_DisplayMonth();
+    DISPLAY_DisplayYear();
 }
 
 void CCLOCK_UpdateTime()

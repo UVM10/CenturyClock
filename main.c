@@ -6,21 +6,9 @@
 /* Global variables ----------------------------------------------------------*/
 int g_cycle_1s_count, g_clock_second, g_clock_minute, g_clock_hour, g_clock_day, g_clock_month, g_clock_year;
 bool g_1s_signal;
-const int *g_p_font_digit, FONT_DIGIT[10][8];
-  FONT_DIGIT[10][8] = {
-    FONT_DIGIT_0,
-    FONT_DIGIT_1,
-    FONT_DIGIT_2,
-    FONT_DIGIT_3,
-    FONT_DIGIT_4,
-    FONT_DIGIT_5,
-    FONT_DIGIT_6,
-    FONT_DIGIT_7,
-    FONT_DIGIT_8,
-    FONT_DIGIT_9
-    };
+const int font_digit[10][8] = FONT_DIGIT_VALUE;
 
-  g_p_font_digit = &FONT_DIGIT[0][0];
+const int *g_p_font_digit = &font_digit[0][0];
 
 /* Private includes ----------------------------------------------------------*/
 #include <stdio.h>

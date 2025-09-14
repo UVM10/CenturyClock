@@ -8,7 +8,7 @@
 void DISPLAY_DisplayNumber(int number, uint32_t position_x, uint32_t position_y, int display_width, int color)
 {
     uint32_t x, y;
-    int digit, number;
+    int digit;
 
     x = position_x + (FONT_WIDTH + 1) * (display_width - 1);
     y = position_y;
