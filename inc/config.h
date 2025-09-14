@@ -15,12 +15,12 @@
 #define MAX_VALUE_YEAR 9999
 
 // Changable default time
-#define DEFAULT_SECOND 0
-#define DEFAULT_MINUTE 0
-#define DEFAULT_HOUR 0
-#define DEFAULT_DAY 0
-#define DEFAULT_MONTH 0
-#define DEFAULT_YEAR 0
+#define DEFAULT_SECOND 56
+#define DEFAULT_MINUTE 37
+#define DEFAULT_HOUR 24
+#define DEFAULT_DAY 28
+#define DEFAULT_MONTH 2
+#define DEFAULT_YEAR 2024
 
 #define COLOR_DEFAULT 0xFFFF00
 #define COLOR_BACKGROUND 0x0
