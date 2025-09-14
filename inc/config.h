@@ -17,7 +17,7 @@
 // Changable default time
 #define DEFAULT_SECOND 56
 #define DEFAULT_MINUTE 59
-#define DEFAULT_HOUR 24
+#define DEFAULT_HOUR 23
 #define DEFAULT_DAY 28
 #define DEFAULT_MONTH 2
 #define DEFAULT_YEAR 2024
