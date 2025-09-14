@@ -7,7 +7,7 @@
 int g_cycle_1s_count, g_clock_second, g_clock_minute, g_clock_hour, g_clock_day, g_clock_month, g_clock_year;
 bool g_1s_signal;
 const int *g_p_font_digit, FONT_DIGIT[10][8];
-  FONT_DIGIT = {
+  FONT_DIGIT[10][8] = {
     FONT_DIGIT_0,
     FONT_DIGIT_1,
     FONT_DIGIT_2,
