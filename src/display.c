@@ -11,7 +11,7 @@ void DISPLAY_DisplayNumber(int number, uint32_t position_x, uint32_t position_y,
     int digit;
 
     x = position_x + (FONT_WIDTH + 1) * (display_width - 1);
-    y = position_y;
+    y = position_y + 1;
 
     while(display_width > 0)
     {

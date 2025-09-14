@@ -52,7 +52,7 @@ void MAIN_Loop(void)
 {
   for(;;)
   {
-    if(g_1s_signal)
+    if(CCLOCK_Wait1sSignal() == true)
     {
       CCLOCK_UpdateTime();
 

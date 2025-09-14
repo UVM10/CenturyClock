@@ -7,9 +7,10 @@
 
 void CCLOCK_DisplayClock()
 {
-    DISPLAY_DisplayHour();
-    DISPLAY_DisplayMinute();
     DISPLAY_DisplaySecond();
+    DISPLAY_DisplayMinute();
+    DISPLAY_DisplayHour();
+    
     DISPLAY_DisplayDay();
     DISPLAY_DisplayMonth();
     DISPLAY_DisplayYear();
@@ -21,15 +22,15 @@ void CCLOCK_UpdateTime()
     {
         g_1s_signal = false;
 
-        if(CLOCK_IncreaseOneSecond() == false)
+        if(CLOCK_IncreaseOneSecond() == true)
         {
-            if(CLOCK_IncreaseOneMinute() == false)
+            if(CLOCK_IncreaseOneMinute() == true)
             {
-                if(CLOCK_IncreaseOneHour() == false)
+                if(CLOCK_IncreaseOneHour() == true)
                 {
-                    if(CLOCK_IncreaseOneDay(g_clock_month, g_clock_year) == false)
+                    if(CLOCK_IncreaseOneDay(g_clock_month, g_clock_year) == true)
                     {
-                        if(CLOCK_IncreaseOneMonth() == false) CLOCK_IncreaseOneYear();
+                        if(CLOCK_IncreaseOneMonth() == true) CLOCK_IncreaseOneYear();
                     }
                 }
             }

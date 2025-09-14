@@ -1,7 +1,7 @@
 #ifndef CONSTANT_H
 #define CONSTANT_H
 
-#define CYCLE_1S_WAIT 1000000000
+#define CYCLE_1S_WAIT 1000000500
 #define DIRECTION_INCREASE true
 #define DIRECTION_DECREASE false
 #define MAX_VALUE_SECOND 59
@@ -16,11 +16,11 @@
 
 // Changable default time
 #define DEFAULT_SECOND 0
-#define DEFAULT_MINUTE 30
-#define DEFAULT_HOUR 7
-#define DEFAULT_DAY 11
-#define DEFAULT_MONTH 5
-#define DEFAULT_YEAR 2024
+#define DEFAULT_MINUTE 0
+#define DEFAULT_HOUR 0
+#define DEFAULT_DAY 0
+#define DEFAULT_MONTH 0
+#define DEFAULT_YEAR 0
 
 #define COLOR_DEFAULT 0xFFFF00
 #define COLOR_BACKGROUND 0x0

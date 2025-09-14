@@ -12,16 +12,16 @@ void LEDMATRIX_DisplayDigit(int digit, uint32_t x, uint32_t y, int color)
     const int *p_row;
 
     height = FONT_HEIGHT;
-    p_row = g_p_font_digit + digit*(FONT_HEIGHT-1);
+    p_row = g_p_font_digit - 1 + digit*(FONT_HEIGHT);
 
     while(height > 0)
     {
         height--;
-        p_row ++;
+        p_row++;
 
         LEDMATRIX_DisplayRow(*p_row, FONT_WIDTH, x, y, color);
         y++;
-    }
+    }    
 }
 
 void LEDMATRIX_DisplayRow(int row, int width, uint32_t x, uint32_t y, int color)
