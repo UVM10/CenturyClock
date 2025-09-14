@@ -6,6 +6,15 @@
 #include "config.h"
 #include "main.h"
 
+
+/**
+    *@brief Display a digit at specified position with specified color
+    *@param digit: Digit to display (0-9)
+    *@param x: X position
+    *@param y: Y position
+    *@param color: Color of the digit
+    *@retval none
+*/
 void LEDMATRIX_DisplayDigit(int digit, uint32_t x, uint32_t y, int color)
 {
     int height;
@@ -24,6 +33,16 @@ void LEDMATRIX_DisplayDigit(int digit, uint32_t x, uint32_t y, int color)
     }    
 }
 
+
+/**
+    *@brief Display a row of pixels at specified position with specified color
+    *@param row: Row data 
+    *@param width: Number of pixels in the row
+    *@param x: X position
+    *@param y: Y position
+    *@param color: Color of the pixels
+    *@retval none
+*/
 void LEDMATRIX_DisplayRow(int row, int width, uint32_t x, uint32_t y, int color)
 {
     while(width > 0)
@@ -41,6 +60,14 @@ void LEDMATRIX_DisplayRow(int row, int width, uint32_t x, uint32_t y, int color)
     }
 }
 
+
+/**
+    *@brief Display a pixel at specified position with specified color
+    *@param x: X position
+    *@param y: Y position
+    *@param color: Color of the pixel
+    *@retval none
+*/
 void LEDMATRIX_DisplayPixel(uint32_t x, uint32_t y, int color)
 {
     ECALL_100((x << 16) | y, color);

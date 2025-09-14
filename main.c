@@ -27,12 +27,24 @@ const int *g_p_font_digit = &font_digit[0][0];
 /* Private function prototypes -----------------------------------------------*/
 
 /* Private user code ---------------------------------------------------------*/
+
+/**
+  *@brief Main program
+  *@param none
+  *@retval none
+*/
 void MAIN_Run(void) 
 {
   MAIN_Init();
   MAIN_Loop();
 }
 
+
+/**
+  *@brief Start clock with default time
+  *@param none
+  *@retval none
+*/
 void MAIN_Init(void)
 {
   g_clock_second = DEFAULT_SECOND;
@@ -48,6 +60,12 @@ void MAIN_Init(void)
   CCLOCK_DisplayClock();
 }
 
+
+/**
+  *@brief Run the clock loop
+  *@param none
+  *@retval none
+*/
 void MAIN_Loop(void)
 {
   for(;;)

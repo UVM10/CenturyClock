@@ -5,6 +5,13 @@
 #include "display.h"
 #include "config.h"
 
+
+/**
+    *@brief Display the clock
+    *@param none
+    *@retval none
+*/
+
 void CCLOCK_DisplayClock()
 {
     DISPLAY_DisplaySecond();
@@ -16,6 +23,12 @@ void CCLOCK_DisplayClock()
     DISPLAY_DisplayYear();
 }
 
+
+/**
+    *@brief Update time
+    *@param none
+    *@retval none
+*/
 void CCLOCK_UpdateTime()
 {
     if(g_1s_signal == true)
@@ -38,6 +51,12 @@ void CCLOCK_UpdateTime()
     }
 }
 
+
+/**
+    *@brief Define 1 second signal
+    *@param none
+    *@retval Signal for 1 second
+*/
 bool CCLOCK_Wait1sSignal()
 {
     if(g_cycle_1s_count == CYCLE_1S_WAIT)
