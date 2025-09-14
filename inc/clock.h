@@ -11,7 +11,7 @@ bool CLOCK_IncreaseOneMonth();
 bool CLOCK_IncreaseOneYear();
 bool CLOCK_IncreaseOneDay(int current_month, int current_year);
 
-bool CLOCK_IncreaseByOne(unsigned int *p_clock_counter, unsigned int max_value, bool b_direction);
+bool CLOCK_IncreaseByOne(int *p_clock_counter, int max_value, bool b_direction);
 bool CLOCK_IsLeapYear(int year);
 
 #endif
