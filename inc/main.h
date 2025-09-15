@@ -1,10 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdbool.h>
-
 // These global variables should be declared as "extern" to indicate that the instance of variable has already been defined somewhere
 // To use these variables, source files need to include "main.h"
+
+#include <stdbool.h>
 
 void MAIN_Run();
 void MAIN_Init();

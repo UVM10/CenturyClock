@@ -8,11 +8,10 @@ build:
 	gcc -c src/clock.c -Iinc -o build/clock.o
 	gcc -c src/display.c -Iinc -o build/display.o
 	gcc -c src/ledmatrix.c -Iinc -o build/ledmatrix.o
-	ar rcs build/libcenclk.a build/cclock.o build/clock.o build/display.o build/ledmatrix.o
-	gcc build/main.o build/libcenclk.a lib/libecall.a -o build/centuryclock
+	gcc build/*.o -o build/centuryclock-v0.0.0-ubuntu24.04.3-x64-gcc13.3.0 -Llib -lecall 
 
 run: build
-	build/centuryclock
+	build/centuryclock-v0.0.0-ubuntu24.04.3-x64-gcc13.3.0
 
 all: clean build run
 

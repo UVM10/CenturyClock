@@ -1,9 +1,9 @@
-#include <stdbool.h>
-#include "main.h"
 #include "cclock.h"
+#include "main.h"
+#include "config.h"
 #include "clock.h"
 #include "display.h"
-#include "config.h"
+#include <stdbool.h>
 
 
 /**
