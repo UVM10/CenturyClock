@@ -1,9 +1,12 @@
 #include "cclock.h"
+
 #include "main.h"
 #include "config.h"
+
+#include <stdbool.h>
+
 #include "clock.h"
 #include "display.h"
-#include <stdbool.h>
 
 
 /**

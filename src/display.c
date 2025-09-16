@@ -1,8 +1,11 @@
 #include "display.h"
+
 #include "main.h"
 #include "config.h"
-#include "ledmatrix.h"
+
 #include <stdint.h>
+
+#include "ledmatrix.h"
 
 
 /**

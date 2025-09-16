@@ -2,7 +2,6 @@
 #define DISPLAY_H
 
 #include <stdint.h>
-#include <stdbool.h>
 
 void DISPLAY_DisplaySecond();
 void DISPLAY_DisplayMinute();

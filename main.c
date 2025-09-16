@@ -1,8 +1,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "cclock.h"
 #include "config.h"
-#include "ecall.h"
 
 /* Global variables ----------------------------------------------------------*/
 int g_cycle_1s_count, g_clock_second, g_clock_minute, g_clock_hour, g_clock_day, g_clock_month, g_clock_year;
@@ -13,7 +11,9 @@ const int *g_p_font_digit = &font_digit[0][0];
 
 /* Private includes ----------------------------------------------------------*/
 #include <stdio.h>
-#include <stdint.h>
+
+#include "cclock.h"
+#include "ecall.h"
 
 /* Private typedef -----------------------------------------------------------*/
 

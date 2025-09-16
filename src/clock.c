@@ -1,8 +1,9 @@
 #include "clock.h"
+
 #include "main.h"
 #include "config.h"
-#include <stdint.h>
 
+#include <stdint.h>
 
 
 /**
